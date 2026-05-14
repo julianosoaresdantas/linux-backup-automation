@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  monitor:
+    build: .
+    image: monitor-linux-jr:latest
+    volumes:
+      - .:/app
+    # Isso garante que o container rode e pare de forma organizada
+    container_name: projeto_monitoramento

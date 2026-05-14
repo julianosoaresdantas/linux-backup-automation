@@ -1,0 +1,4 @@
+srv-web-prod 192.168.1.10 web_server
+srv-db-prod 192.168.1.20 database
+srv-jump-host 127.0.0.1 jump_server
+srv-teste 10.255.255.1 teste

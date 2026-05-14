@@ -1,0 +1,4 @@
+backups/*.tar.gz
+backups/*.sha256
+logs/*.log
+.DS_Store

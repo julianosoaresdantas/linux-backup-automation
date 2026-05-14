@@ -1,0 +1,24 @@
+services:
+  rede:
+    build: .
+    image: monitor-linux-jr:latest
+    container_name: monitor_rede
+    volumes:
+      - .:/app
+    command: ["/bin/bash", "./scripts/monitor.sh"]
+
+  performance:
+    build: .
+    image: monitor-linux-jr:latest
+    container_name: monitor_perf
+    volumes:
+      - .:/app
+    command: ["/bin/bash", "./scripts/performance.sh"]
+
+  backup:
+    build: .
+    image: monitor-linux-jr:latest
+    container_name: monitor_backup
+    volumes:
+      - .:/app
+    command: ["/bin/bash", "./scripts/backup_logs.sh"]
